@@ -11,14 +11,9 @@ docs_dir: 'docs'
 
 theme:
   name: 'material'
-  language: 'zh'  # 配置语言
-  palette:  # 颜色
+  language: 'zh'  
+  palette: 
     primary: 'light blue'
     accent: 'indigo'
   feature:
-    tabs: true;  # 横向导航
-
-# PDF导出插件
-plugins:
-  - search
-#  - pdf-export #这个插件还有点问题，没有更新
+    tabs: true; 

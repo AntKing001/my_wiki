@@ -1,6 +1,4 @@
 /docs
-.*
-*.sh
 git.sh
 .DS_Store
 .gitignore

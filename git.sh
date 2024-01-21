@@ -1,6 +1,6 @@
-1 #!/bin/zsh
+#!/bin/zsh
 
-git add . 
+git add .
 
 time=$(date +"%Y-%m-%d %H:%M:%S")
 
@@ -8,4 +8,4 @@ time=$(date +"%Y-%m-%d %H:%M:%S")
 
 git commit -m "$time"
 
-git push    
+git push

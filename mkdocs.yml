@@ -1,0 +1,24 @@
+site_name: My Docs
+site_author: 始于迁至
+
+google_analytics: ['UA-36723568-3', 'mkdocs.org']
+
+repo_url: https://github.com/AntKing001/MSL_wiki
+repo_name: 'Msl GitHub'
+copyright: "Copyright 2023 始于迁至"
+
+docs_dir: 'docs'
+
+theme:
+  name: 'material'
+  language: 'zh'  # 配置语言
+  palette:  # 颜色
+    primary: 'light blue'
+    accent: 'indigo'
+  feature:
+    tabs: true;  # 横向导航
+
+# PDF导出插件
+plugins:
+  - search
+#  - pdf-export #这个插件还有点问题，没有更新

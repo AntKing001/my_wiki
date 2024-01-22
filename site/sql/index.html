@@ -205,7 +205,7 @@
         
   
   <span class="md-ellipsis">
-    Welcome to My_Wiki
+    Welcome to Msl_Wiki
   </span>
   
 
@@ -246,6 +246,26 @@
   
   <span class="md-ellipsis">
     about Me
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../c%2B%2B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C++
   </span>
   
 
@@ -445,10 +465,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -459,8 +479,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Note
           </label>
@@ -573,10 +593,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -587,8 +607,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             操作系统
           </label>
@@ -701,10 +721,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -715,8 +735,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             计算机网络
           </label>
@@ -979,28 +999,28 @@
 <pre><code>show databases
 </code></pre>
 <p>查询当前数据库</p>
-<pre><code>select database  &quot; &quot; ()
+<pre><code class="language-sql">select database  &quot; &quot; ()
 </code></pre>
 <p>创建数据库</p>
-<pre><code>create database &quot; &quot; if not exists database_name;
+<pre><code class="language-sql">create database &quot; &quot; if not exists database_name;
 </code></pre>
 <p>删除数据库</p>
-<pre><code>drop database &quot;&quot; if exists test;
+<pre><code class="language-sql">drop database &quot;&quot; if exists test;
 </code></pre>
 <p>使用数据库</p>
-<pre><code>use database_name;
+<pre><code class="language-sql">use database_name;
 </code></pre>
 <p>查询所有表结构</p>
 <pre><code>show tables;
 </code></pre>
 <p>查询表结构</p>
-<pre><code>desc table_name;
+<pre><code class="language-sql">desc table_name;
 </code></pre>
 <p>查询指定表的建表结构</p>
-<pre><code>show create table table_name;
+<pre><code class="language-sql">show create table table_name;
 </code></pre>
 <p>创建表</p>
-<pre><code>create table table_name (
+<pre><code class="language-sql">create table table_name (
         字段1    字段类型1[]
         字段2    字段类型2[]
         字段3    字段类型3[]
@@ -1008,68 +1028,74 @@
 </code></pre>
 <p>DLL-表修改
 添加字段</p>
-<pre><code>alter table &quot;表名&quot; add &quot;字段&quot; &quot;类型&quot; [comment '']
+<pre><code class="language-sql">alter table &quot;表名&quot; add &quot;字段&quot; &quot;类型&quot; [comment '']
+
 alter table emp add nick_name varchar(20) comment '昵称'
 </code></pre>
 <p>修改数据类型</p>
-<pre><code>alter table 表名 modify  varchar(20) ;
+<pre><code class="language-sql">alter table 表名 modify  varchar(20) ;
+
 alter table 表名 change 旧字段 新字段 varchar(20) comment '用户名';
 </code></pre>
 <p>删除字段</p>
-<pre><code>alter table emp drop 字段
+<pre><code class="language-sql">alter table emp drop 字段
 </code></pre>
 <p>修改表名</p>
-<pre><code>alter table 表名 rename to 新表名;
+<pre><code class="language-sql">alter table 表名 rename to 新表名;
 </code></pre>
 <p>删除表</p>
-<pre><code>drop table [if exists] 表名;
+<pre><code class="language-sql">drop table [if exists] 表名;
 </code></pre>
 <p>删除指定表，并且重新创建该表</p>
-<pre><code>truncate table 表名;
+<pre><code class="language-sql">truncate table 表名;
 </code></pre>
 <h2 id="dml">DML</h2>
 <p>DML-添加数据</p>
-<pre><code>insert into 表名 (字段1,字段2,字段3,字段4,字段5) values(值1,值2,值3,值4,值5);
+<pre><code class="language-sql">insert into 表名 (字段1,字段2,字段3,字段4,字段5) values(值1,值2,值3,值4,值5);
+
 insert into 表名 values(值1,值2,值3,值4,值5);
+
 insert into 表名 (字段....) values (值....),(值....),(值....),(值....),(值....);
 </code></pre>
 <p>修改数据</p>
-<pre><code>update 表名 set 字段名1=值1,字段名2=值2,字段名3=值3,字段名4=值4, [where 条件]
+<pre><code class="language-sql">update 表名 set 字段名1=值1,字段名2=值2,字段名3=值3,字段名4=值4, [where 条件]
 </code></pre>
 <p>删除数据</p>
-<pre><code>delete from 表名 [where 条件]
+<pre><code class="language-sql">delete from 表名 [where 条件]
 </code></pre>
 <p>DQL-数据查询</p>
-<pre><code>select 字段列表 from 表名列表 where 条件列表 group by 分组字段列表 having 分组后条件列表 order by 排序字段列表 limit 分页参数
+<pre><code class="language-sql">select 字段列表 from 表名列表 where 条件列表 group by 分组字段列表 having 分组后条件列表 order by 排序字段列表 limit 分页参数
 </code></pre>
 <p>查询多个字段</p>
-<pre><code>select 字段1,字段2,字段3... from 表名;
+<pre><code class="language-sql">select 字段1,字段2,字段3... from 表名;
 </code></pre>
 <p>去除重复记录</p>
-<pre><code>select distinct 字段列表 from 表名;
+<pre><code class="language-sql">select distinct 字段列表 from 表名;
 </code></pre>
 <p>聚合函数  (null不参与运算)</p>
-<pre><code>select count(*) from employee;
+<pre><code class="language-sql">select count(*) from employee;
+
 select avg(age) from employee;
+
 select max(age) from employee;
 </code></pre>
 <p>分组查询</p>
-<p>```select 字段列表 from 表名 [where 条件] group by 分组字段名 [having 分组后过滤条件]</p>
-<pre><code>where于having的区别
+<pre><code class="language-sql">select 字段列表 from 表名 [where 条件] group by 分组字段名 [having 分组后过滤条件]
+</code></pre>
+<p>where于having的区别
 执行时机不同：where是分组之前进行过滤，不满足where条件，不参与分组，而having是分组之后对结果进行过滤。
 判断条件不同：where不能对聚合函数进行判断，而having可以。
-执行顺序：where &gt; 聚合函数  &gt; having
-
-排序查询
-```select 字段列表 from 表名 order by 字段1 排序方式1, 字段2 排序方式2, 字段3 排序方式3
+执行顺序：where &gt; 聚合函数  &gt; having</p>
+<p>排序查询</p>
+<pre><code class="language-sql">select 字段列表 from 表名 order by 字段1 排序方式1, 字段2 排序方式2, 字段3 排序方式3
 ASC: 升序（默认）
 DESC: 降序
 </code></pre>
 <p>分页查询</p>
-<pre><code>select 字段列表 from 表名 limit 起始索引,查询记录数
+<pre><code class="language-sql">select 字段列表 from 表名 limit 起始索引,查询记录数
 </code></pre>
 <p>DQL-执行顺序</p>
-<pre><code>select
+<pre><code class="language-sql">select
     字段列表
 from(4)
     表名列表
@@ -1087,37 +1113,38 @@ limit(6)
 <h2 id="dcl">DCL</h2>
 <p>管理用户
 1. 查询用户</p>
-<pre><code>use mysql;
+<pre><code class="language-sql">use mysql;
+
 select * from user;
 </code></pre>
 <ol>
 <li>创建用户</li>
 </ol>
-<pre><code>create user '用户名'@'主机名' identified by '密码';
+<pre><code class="language-sql">create user '用户名'@'主机名' identified by '密码';
 </code></pre>
 <ol>
 <li>修改用户密码</li>
 </ol>
-<pre><code>alter user '用户名'@'主机名' identified with mysql_native_password by '新密码';
+<pre><code class="language-sql">alter user '用户名'@'主机名' identified with mysql_native_password by '新密码';
 </code></pre>
 <ol>
 <li>删除用户</li>
 </ol>
-<pre><code>drop user '用户名'@'主机名';
+<pre><code class="language-sql">drop user '用户名'@'主机名';
 </code></pre>
 <p>权限控制
 1. 查询权限</p>
-<pre><code>show grants for ''@'';
+<pre><code class="language-sql">show grants for ''@'';
 </code></pre>
 <ol>
 <li>授予权限</li>
 </ol>
-<pre><code>grant 权限列表 on 数据库名.表名 to ''@'';
+<pre><code class="language-sql">grant 权限列表 on 数据库名.表名 to ''@'';
 </code></pre>
 <ol>
 <li>撤销权限</li>
 </ol>
-<pre><code>revoke all on 数据库名.表名 to ''@'';
+<pre><code class="language-sql">revoke all on 数据库名.表名 to ''@'';
 </code></pre>
 <p>非空约束(NOT NULL):保证字段不为null
 唯一约束(UNIQUE):保证字段的数据唯一不重复
@@ -1126,13 +1153,13 @@ select * from user;
 检查约束(CHECK):保证字段满足某一条件</p>
 <p>外建约束(FOREIGN KEY):使两张表的数据之间建立连接，保证数据的一致性和完整性。
 添加外建</p>
-<pre><code>alter table user add constraint fk_user_dept_id foreign key (dept_id) references user(id);
+<pre><code class="language-sql">alter table user add constraint fk_user_dept_id foreign key (dept_id) references user(id);
 </code></pre>
 <p>删除外建</p>
-<pre><code>alter table user drop foreign key fk_user_dept_id;
+<pre><code class="language-sql">alter table user drop foreign key fk_user_dept_id;
 </code></pre>
 <p>多表查询</p>
-<pre><code>select * from student, course where student.id = course.id;
+<pre><code class="language-sql">select * from student, course where student.id = course.id;
 </code></pre>
 <p>连接查询
 内连接：查询A与B的交集部分
@@ -1142,30 +1169,30 @@ select * from user;
 自连接：当前表与自身的连接查询，自连接必须使用表别名。</p>
 <p>子查询</p>
 <p>隐式内连接</p>
-<pre><code>select * from table1,table2 where 条件
+<pre><code class="language-sql">select * from table1,table2 where 条件
 </code></pre>
 <p>显式内连接</p>
-<pre><code>select * from table1 join table2 on 条件
+<pre><code class="language-sql">select * from table1 join table2 on 条件
 </code></pre>
 <p>左外连接</p>
-<pre><code>select * from table1 left join table2 on 条件
+<pre><code class="language-sql">select * from table1 left join table2 on 条件
 </code></pre>
 <p>右外连接</p>
-<pre><code>select * from table1 right join table2 on 条件
+<pre><code class="language-sql">select * from table1 right join table2 on 条件
 </code></pre>
 <p>联合查询-union(去重),union all(不去重)
 把多次查询结果合并起来，形成一个新的查询结果集</p>
-<pre><code>select * from table1 union select * from table2;
+<pre><code class="language-sql">select * from table1 union select * from table2;
 </code></pre>
 <p>子查询
 标量子查询</p>
-<pre><code>select * from table1 where 字段 = (select 字段 from table2 where 字段 = ' ');
+<pre><code class="language-sql">select * from table1 where 字段 = (select 字段 from table2 where 字段 = ' ');
 </code></pre>
 <p>列子查询</p>
-<pre><code>select * from table1 where 字段 in (select 字段 from table2 where 字段 = ' ' or 字段 = ' ');
+<pre><code class="language-sql">select * from table1 where 字段 in (select 字段 from table2 where 字段 = ' ' or 字段 = ' ');
 </code></pre>
 <p>行子查询</p>
-<pre><code>select * from table1 where (zd1, zd2) = (select zd1, zd2 from table2 where 条件);
+<pre><code class="language-sql">select * from table1 where (zd1, zd2) = (select zd1, zd2 from table2 where 条件);
 </code></pre>
 <h2 id="_1">事务</h2>
 <p>事务：一组操作的集合，是一个不可分割的单位，事务会将所有的操作作为一个整体想系统提交或撤销操作的请求，及要么同时成功，要么同时失败。
@@ -1184,12 +1211,12 @@ set @@autocommit = 0; (设置手动提交)
 幻读:一个事务按照条件查询数据时，没有对应的数据行，但在插入数据时，又发现数据已经存在。</p>
 <p>事务隔离级别
 查看事务隔离级别</p>
-<pre><code>select @@TRANSACTION_ISOLATION;
+<pre><code class="language-sql">select @@TRANSACTION_ISOLATION;
 
 set [session | global] transaction isolation level {read uncommitted | read committed | repeat read | serializable}
 </code></pre>
 <h2 id="_2">存储引擎</h2>
-<pre><code>create table table3 (
+<pre><code class="language-sql">create table table3 (
     id int
 ) engine = innodb;
 </code></pre>
@@ -1203,28 +1230,30 @@ set [session | global] transaction isolation level {read uncommitted | read comm
     hash索引（默认）</p>
 <h2 id="_3">索引</h2>
 <p>创建索引</p>
-<pre><code>create [unique | fulltext] index index_name on table_name (index_col_name1,index_col_name2...)
+<pre><code class="language-sql">create [unique | fulltext] index index_name on table_name (index_col_name1,index_col_name2...)
+
 create index idx_table_name on table_name(name);
 </code></pre>
 <p>查看索引</p>
-<pre><code>show index from table_name;
+<pre><code class="language-sql">show index from table_name;
 </code></pre>
 <p>删除索引</p>
-<pre><code>drop index index_name on table_name;
+<pre><code class="language-sql">drop index index_name on table_name;
 </code></pre>
 <p>查询SQL语句执行频率</p>
-<pre><code>show global status like 'com_______';
+<pre><code class="language-sql">show global status like 'com_______';
 </code></pre>
 <p>show profiles能够在做SQL优化时帮助我们了解时间都耗费到哪里，默认关闭，使用set语句在session或者global级别开启profiling</p>
-<pre><code>select @@have_profiling;
+<pre><code class="language-sql">select @@have_profiling;
 </code></pre>
 <p>查询query_id的SQL语句各个阶段的耗时情况。</p>
-<pre><code>show profile for query query_id;
+<pre><code class="language-sql">show profile for query query_id;
+
 show profile cpu for query query_id;(查询cpu)
 </code></pre>
 <p>explain执行计划
 explain或desc命令获取mysql如何执行select语句，包括在select语句执行过程中表如何连接和连接的顺序。</p>
-<pre><code>explain select 字段 from 表名 where 条件
+<pre><code class="language-sql">explain select 字段 from 表名 where 条件
 </code></pre>
 <p>explain执行计划各字段含义
 ID:select查询的序列号，表示查询中执行select子句或者是操作表的顺序（id相同，执行从上到下，id不同，值越大，越先执行）</p>

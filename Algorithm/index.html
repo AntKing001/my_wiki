@@ -300,6 +300,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rmq" class="md-nav__link">
+    <span class="md-ellipsis">
+      RMQ (区间最值)
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -815,6 +824,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#rmq" class="md-nav__link">
+    <span class="md-ellipsis">
+      RMQ (区间最值)
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -855,11 +873,13 @@ int main() {
         }           
     }
     cout &lt;&lt; f[n][m] &lt;&lt; endl;
+
     return 0;
+
 }
 </code></pre>
 <h2 id="_1">快速幂</h2>
-<pre><code>ll quick_mod(ll a, ll b, ll mod) {
+<pre><code class="language-cpp">ll quick_mod(ll a, ll b, ll mod) {
     ll res = 1;
     while(b &gt; 0) {
         if (b &amp; 1) {
@@ -869,6 +889,59 @@ int main() {
         a = a * a % mod;
     }
     return res;
+}
+</code></pre>
+<h2 id="rmq">RMQ (区间最值)</h2>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+typedef long long ll;
+struct node {
+    int l, r;
+    ll v;
+}s[1000010];
+int m, n = -1, k;
+ll a = 0, mod, t;
+void build(int l ,int r, int node) {
+    s[node] = {l, r, 0};
+    if (l == r) return;
+    int mid = (l + r) / 2;
+    build(l, mid, node * 2 + 1);
+    build(mid + 1, r, node * 2 + 2);
+}
+void update(int node, int x, int v) {
+    if (s[node].l == s[node].r &amp;&amp; s[node].l == x) {
+        s[node].v = v;
+        return;
+    }
+    int mid = (s[node].l + s[node].r) / 2;
+    if (x &lt;= mid) update(node * 2 + 1, x, v);
+    else update(node * 2 + 2, x, v);
+    s[node].v = max(s[node * 2 + 1].v, s[node * 2 + 2].v);
+}
+int query(int l, int r, int node) {
+    if (l &lt;= s[node].l &amp;&amp; r &gt;= s[node].r) return s[node].v;
+    int mid = (s[node].l + s[node].r) / 2;
+    int maxn = 0;
+    if (mid &gt;= l) maxn = max(maxn, query(l ,r, 2 * node + 1));
+    if (mid &lt; r) maxn = max(maxn, query(l, r, 2 * node + 2));
+    return maxn;
+}
+int main () {
+    build(0, 200000, 0);
+    cin &gt;&gt; m &gt;&gt; mod;
+    while (m--) {
+        string op;
+        cin &gt;&gt; op;
+        if (op[0] == 'A') {
+            n++;
+            cin &gt;&gt; t;
+            update(0, n, (a + t) % mod);
+        } else {
+            cin &gt;&gt; k;
+            a = query( n - k + 1, n, 0);
+            cout &lt;&lt; a &lt;&lt; endl;
+        }
+    }
 }
 </code></pre>
 

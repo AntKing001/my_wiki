@@ -340,6 +340,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mv" class="md-nav__link">
+    <span class="md-ellipsis">
+      mv
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#man" class="md-nav__link">
+    <span class="md-ellipsis">
+      man
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rebootshoutdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      reboot/shoutdown
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译过程
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -815,6 +851,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mv" class="md-nav__link">
+    <span class="md-ellipsis">
+      mv
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#man" class="md-nav__link">
+    <span class="md-ellipsis">
+      man
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rebootshoutdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      reboot/shoutdown
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      编译过程
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -832,13 +904,53 @@
 
   <h1>Shell</h1>
 
-<h2 id="grep">grep命令</h2>
+<h3 id="grep"><strong>grep命令</strong></h3>
 <p>grep命令用于查找文件里符合条件的字符串或者正则表达式。</p>
 <pre><code>grep [options] pattern [files]
 </code></pre>
-<h2 id="wc">wc命令</h2>
+<h3 id="wc"><strong>wc命令</strong></h3>
 <p>wc用于计算字数，可以计算文件的字节数，字数，或者列数
 知道名称，或者文件名为“—”，则从标准输入设备读取数据</p>
+<h3 id="mv"><strong>mv</strong></h3>
+<p>移动文件到新的位置，或者重命名文件。</p>
+<h3 id="man"><strong>man</strong></h3>
+<p>查看命令使用手册，按q推出。</p>
+<pre><code>man [命令]
+</code></pre>
+<h3 id="rebootshoutdown"><strong>reboot/shoutdown</strong></h3>
+<p>重启linux系统/关机</p>
+<pre><code>reboot
+
+shut -h [时间]   shut -h now
+</code></pre>
+<h3 id="_1">编译过程</h3>
+<p><strong>1. 预处理-Pre-Prcocessing</strong></p>
+<pre><code># -E 选项指示编译器仅对输入文件进行预处理
+g++ -E test.cpp -o test.i
+</code></pre>
+<p><strong>2. 编译-Compiling</strong></p>
+<pre><code># -s 编译选项告诉g++在为c++代码产生了汇编语言文件后停止编译。
+# g++产生汇编语言文件到缺省扩展名是 .s
+g++ -E test.i -o test.s
+</code></pre>
+<p><strong>3. 汇编-Assembling</strong></p>
+<pre><code># -c 选项告诉g++仅把源代码编译为机器语言的目标代码。
+# 缺省时，g++建立的目标代码文件有一个.o的扩展名。
+g++ -E test.s -o test.o
+</code></pre>
+<p><strong>4. 链接-Linking</strong></p>
+<pre><code># -o 编译选项来为将产生的可执行文件用指定的文件名
+g++ test.o -o test
+
+</code></pre>
+<pre><code></code></pre>
+<pre><code></code></pre>
+<pre><code></code></pre>
+<pre><code></code></pre>
+<pre><code></code></pre>
+<pre><code></code></pre>
+<pre><code></code></pre>
+<pre><code></code></pre>
 
 
 

@@ -367,15 +367,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      编译过程
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -878,15 +869,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      编译过程
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -923,28 +905,6 @@
 
 shut -h [时间]   shut -h now
 </code></pre>
-<h3 id="_1">编译过程</h3>
-<p><strong>1. 预处理-Pre-Prcocessing</strong></p>
-<pre><code># -E 选项指示编译器仅对输入文件进行预处理
-g++ -E test.cpp -o test.i
-</code></pre>
-<p><strong>2. 编译-Compiling</strong></p>
-<pre><code># -s 编译选项告诉g++在为c++代码产生了汇编语言文件后停止编译。
-# g++产生汇编语言文件到缺省扩展名是 .s
-g++ -E test.i -o test.s
-</code></pre>
-<p><strong>3. 汇编-Assembling</strong></p>
-<pre><code># -c 选项告诉g++仅把源代码编译为机器语言的目标代码。
-# 缺省时，g++建立的目标代码文件有一个.o的扩展名。
-g++ -E test.s -o test.o
-</code></pre>
-<p><strong>4. 链接-Linking</strong></p>
-<pre><code># -o 编译选项来为将产生的可执行文件用指定的文件名
-g++ test.o -o test
-
-</code></pre>
-<pre><code></code></pre>
-<pre><code></code></pre>
 <pre><code></code></pre>
 <pre><code></code></pre>
 <pre><code></code></pre>

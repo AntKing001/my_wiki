@@ -1060,6 +1060,9 @@
 <p>在当前文件下的所有文件中查找字符串</p>
 <pre><code>find 路径 -type f -name &quot;*&quot; | xargs grep &quot;findstr&quot;
 </code></pre>
+<p>查看端口被哪个程序占用</p>
+<pre><code>sudo lsof -i tcp:port
+</code></pre>
 <h3 id="_2"><strong>环境变量</strong></h3>
 <h3 id="rebootshoutdown"><strong>reboot/shoutdown</strong></h3>
 <p>重启linux系统/关机

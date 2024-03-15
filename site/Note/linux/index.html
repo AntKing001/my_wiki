@@ -497,6 +497,25 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O复用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I/O复用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      select
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       环境变量
@@ -504,13 +523,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#rebootshoutdown" class="md-nav__link">
     <span class="md-ellipsis">
       reboot/shoutdown
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -946,6 +970,25 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O复用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I/O复用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      select
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       环境变量
@@ -953,13 +996,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#rebootshoutdown" class="md-nav__link">
     <span class="md-ellipsis">
       reboot/shoutdown
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1063,6 +1111,19 @@
 <p>查看端口被哪个程序占用</p>
 <pre><code>sudo lsof -i tcp:port
 </code></pre>
+<h2 id="io">I/O复用</h2>
+<ol>
+<li>
+<p>阻塞I/O模型：在阻塞IO模型中，当应用发起一个IO操作后，程序会被阻塞，直到操作完成。这意味着应用程序在等待IO操作完成时无法执行其他的任务，造成CPU资源的浪费。</p>
+</li>
+<li>
+<p>非阻塞IO模型：非阻塞IO模型允许一个应用程序发起非阻塞IO操作后继续执行其他任务，而不必等待IO操作完成。应用程序可以通过轮训的方式检查IO操作是否完成，从而实现异步处理数据。</p>
+</li>
+<li>
+<p>IO多路复用模型：IO多路复用模型时一种通过单线程同时监听多个IO时间的机制。常用的IO多路复用系统调用包括select，poll，epoll。通过IO多路复用，应用程序可以同时监听多个文件描述符（sockets），一旦其中任意一个文件描述符准备好IO操作，程序收到通知并且进行相应的处理，从而提高了并发性能。</p>
+</li>
+</ol>
+<h3 id="select">select</h3>
 <h3 id="_2"><strong>环境变量</strong></h3>
 <h3 id="rebootshoutdown"><strong>reboot/shoutdown</strong></h3>
 <p>重启linux系统/关机

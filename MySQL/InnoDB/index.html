@@ -276,11 +276,51 @@
   
   
     <li class="md-nav__item">
-      <a href="../../shell/" class="md-nav__link">
+      <a href="../../docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Shell
+    Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../openGL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    openGL
   </span>
   
 
@@ -327,10 +367,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -341,8 +381,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             MySQL
           </label>
@@ -421,10 +461,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -435,8 +475,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Note
           </label>
@@ -549,10 +589,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -563,8 +603,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             操作系统
           </label>
@@ -677,10 +717,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -691,8 +731,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             计算机网络
           </label>
@@ -843,6 +883,26 @@
 
   <h1>InnoDB</h1>
 
+<p>支持事务，行级锁和外间约束的存储引擎</p>
+<p>底层实现：
+1. 多版本控制（MVCC）：InnoDB使用MVCC技术来实现事务的并发控制。每个事务在执行过程中会生成不同版本的数据，这些版本可以被其他事务读取，从而实现多个事务同时访问同一行数据而不会相互干扰。</p>
+<ol>
+<li>
+<p>聚簇索引：InnoDB存储引擎的表数据是按照主键顺序存储的，因此主键索引就是表数据的物理顺序。这种设计成为聚簇索引，可以提高性能，减少IO操作。</p>
+</li>
+<li>
+<p>缓存池（Buffer Pool）：InnoDB使用缓存池来缓冲数据和索引，减少磁盘的IO操作，提高性能。缓存池缓存的最近访问的数据页，可以加速对数据的读取。</p>
+</li>
+<li>
+<p>日志系统： InnoDB又一个称为重做日志的机制，用于保持事务的持久性。每个事务提交时，会先写入重做日志，然后再将数据写入磁盘。这样可以确保即使系统崩溃，之前提交的事务也不会丢失。</p>
+</li>
+<li>
+<p>自适应哈希索引：InnoDB存储引擎会根据数据的访问频率自动创建和调整哈希索引，以提高查询性能。</p>
+</li>
+</ol>
+<p>普通索引：可以重复的索引值，不限制表中列的取值。
+唯一索引：索引值必须是唯一的，不允许有重复的索引值，可以有NULL值（只能一个）。
+主键索引：是一种特殊的唯一索引，不允许有NULL值。</p>
 
 
 
@@ -850,6 +910,8 @@
 
 
 
+  
+  
 
 
 

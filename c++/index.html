@@ -14,7 +14,7 @@
         <link rel="prev" href="../Algorithm/">
       
       
-        <link rel="next" href="../shell/">
+        <link rel="next" href="../docker/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -347,6 +347,165 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#newmalloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      new与malloc：
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      多线程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能指针
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      GDB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      内存池
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      移动语义
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      brpc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      获取当前时间
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      调用可执行程序
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exec" class="md-nav__link">
+    <span class="md-ellipsis">
+      exec函数族
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O复用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      阻塞&amp;非阻塞IO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="阻塞&非阻塞IO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      水平触发
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      边缘触发
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      select模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pollselect" class="md-nav__link">
+    <span class="md-ellipsis">
+      poll模型（在select基础上进行了一些优化）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epoll" class="md-nav__link">
+    <span class="md-ellipsis">
+      epoll模型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -362,11 +521,51 @@
   
   
     <li class="md-nav__item">
-      <a href="../shell/" class="md-nav__link">
+      <a href="../docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Shell
+    Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openGL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    openGL
   </span>
   
 
@@ -411,10 +610,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -425,8 +624,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             MySQL
           </label>
@@ -497,10 +696,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -511,8 +710,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Note
           </label>
@@ -625,10 +824,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -639,8 +838,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             操作系统
           </label>
@@ -753,10 +952,10 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -767,8 +966,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             计算机网络
           </label>
@@ -955,6 +1154,165 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#newmalloc" class="md-nav__link">
+    <span class="md-ellipsis">
+      new与malloc：
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      多线程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能指针
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      GDB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      内存池
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      移动语义
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      brpc
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      获取当前时间
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      调用可执行程序
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exec" class="md-nav__link">
+    <span class="md-ellipsis">
+      exec函数族
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O复用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      阻塞&amp;非阻塞IO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="阻塞&非阻塞IO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      水平触发
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      边缘触发
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    <span class="md-ellipsis">
+      select模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pollselect" class="md-nav__link">
+    <span class="md-ellipsis">
+      poll模型（在select基础上进行了一些优化）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#epoll" class="md-nav__link">
+    <span class="md-ellipsis">
+      epoll模型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1061,6 +1419,260 @@ link_directories(/usr/lib/myfolder 和 ./lib)
 <p>安全性：define定义的宏常量没有数据类型，只是进行简单的替换，不会进行类型安全检查；const定义的常量是有类型的，是要进行类型判断的</p>
 <p>内存占用：define定义的宏常量，在程序中使用多少次就会进行多少次替换，内存中有多个备份，占用的是代码段的内存；const定义常量占用静态存储区域的空间，程序运行过程中只有一份</p>
 <p>调试：define定义的宏常量不能调试，因为在预编译阶段就已经进行替换了；const定义的常量是可以进行调试的。</p>
+<h2 id="newmalloc">new与malloc：</h2>
+<p>new是一个运算符，而malloc是一个库函数。
+new会自动计算所需要的内存空间，而malloc不可以
+new会调用构造函数，而malloc不会。
+new类型安全，而malloc不是
+new/delete不需要库文件的支持，而malloc/free需要
+new返回类型指针，而malloc返回*void类型指针，需要强制转换。
+new运算符可以被重载，而malloc不可以</p>
+<h2 id="_3">多线程</h2>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;thread&gt;
+using namespace std;
+void fun(int x) {
+    std::cout &lt;&lt; &quot;hello world&quot; &lt;&lt; x &lt;&lt; endl;
+}
+int main () {
+    thread t1(fun, 1);
+    thread t2(fun, 2);
+    t1.join();
+    t2.join();
+    return 0;
+}
+</code></pre>
+<h2 id="_4">智能指针</h2>
+<p><code>#include&lt;memory&gt;</code></p>
+<p><code>unique_ptr</code>: 作用域指针，超出作用域时自动销毁，然后调用delete。该指针不能进行复制，如果进行复制，两个指针unique_ptr指向同一快内存，若果其中一个死了，他会释放那段内存，另一个指针则会指向已经被释放的内存。
+不能复制：拷贝构造函数与拷贝构造操作符被删除 </p>
+<pre><code>unique_ptr(const _Myt&amp;) = delete;
+_Myt&amp; operator=(const &amp;_Myt&amp;) = delete;
+</code></pre>
+<pre><code>class Entity {
+public:
+    Entity() {
+        std::cout &lt;&lt; &quot;Create Entity&quot; &lt;&lt; std::endl;
+    }
+    ~Entity() {
+        std::cout &lt;&lt; &quot;Destroy Entity&quot; &lt;&lt; std::endl;
+    }
+    void print() {}
+};
+int main () {
+    {
+        std::unique_ptr&lt;Entity&gt; entity(new Entity());
+        std::unique_ptr&lt;Entity&gt; entity1 = std::make_unique&lt;Entity&gt;();  //异常安全(不会得到一个没有引用的悬空指针，从而造成内存泄露)
+
+        std::unique_ptr&lt;Entity&gt; entity2 = entity;  //编译错误
+
+        entity-&gt;print();
+    }
+    return 0;
+}
+</code></pre>
+<p><code>shared_ptr</code>:通过引用计数，可以跟踪指针有多少的引用，一旦引用计数为0，就会删除。shared_ptr需要分配一块内存，叫做控制块，用来存储引用计数。多线程对于同一个shared_ptr实例的读操作可以保证线程安全，但对于同一个sharedptr实例的写操作（改变一个sharedptr指向的对象）则需要同步，否则会发生race condition。即sharedptr的引用计数本身是线程安全且无锁的，但sharedptr对象本身的读写则不是，因为sharedptr有两个数据成员，读写操作不能原子化。</p>
+<pre><code>int main () {
+    {
+        std::shared_ptr&lt;Entity&gt; e0;
+        {
+            std::shared_ptr&lt;Entity&gt; entity = std::make_shared&lt;Entity&gt;();
+            e0 = entity;
+        }
+        e0-&gt;print();
+    }
+    return 0;
+}
+</code></pre>
+<p><code>weak_ptr</code>:可以赋值给weak_ptr，但不会增加引用计数</p>
+<pre><code>int main () {
+    {
+        std::weak_ptr&lt;Entity&gt; e0;
+        {
+            std::shared_ptr&lt;Entity&gt; entity = std::make_shared&lt;Entity&gt;();
+            e0 = entity;
+            e0-&gt;print();    //错误，entity已经销毁，无法调用。
+        }
+    }
+    return 0;
+}
+</code></pre>
+<h2 id="gdb">GDB</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">指令</th>
+<th style="text-align: center;">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">run(r)</td>
+<td style="text-align: center;">开始运行程序</td>
+</tr>
+<tr>
+<td style="text-align: center;">break(b)</td>
+<td style="text-align: center;">设置断点，可以置顶文件名或行号或者参数名作为参数</td>
+</tr>
+<tr>
+<td style="text-align: center;">continue(c)</td>
+<td style="text-align: center;">继续执行程序，知道下一个断点或者程序结束</td>
+</tr>
+<tr>
+<td style="text-align: center;">next(n)</td>
+<td style="text-align: center;">执行下一行代码，并逐行执行函数调用（不会进入函数内部）</td>
+</tr>
+<tr>
+<td style="text-align: center;">step(s)</td>
+<td style="text-align: center;">执行下一行代码，并逐行语句执行函数调用（会进入函数内部）</td>
+</tr>
+<tr>
+<td style="text-align: center;">print(p)</td>
+<td style="text-align: center;">打印变量的值，可以使用表达式作为参数</td>
+</tr>
+<tr>
+<td style="text-align: center;">backtrace(bt)</td>
+<td style="text-align: center;">显示当前调用栈信息</td>
+</tr>
+<tr>
+<td style="text-align: center;">list(l)</td>
+<td style="text-align: center;">显示当前位置附近的源代码</td>
+</tr>
+<tr>
+<td style="text-align: center;">info breakpoints</td>
+<td style="text-align: center;">显示已设置的所有断点信息</td>
+</tr>
+<tr>
+<td style="text-align: center;">delete breakpoint<number></td>
+<td style="text-align: center;">删除指定编号的断点</td>
+</tr>
+<tr>
+<td style="text-align: center;">watch<variable></td>
+<td style="text-align: center;">监视变量，在其值发生变化时自动停止程序运行</td>
+</tr>
+<tr>
+<td style="text-align: center;">quit(ctrl + D)</td>
+<td style="text-align: center;">提出GDB调试器</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">内存池</h2>
+<p>主要解决以下问题：</p>
+<ol>
+<li>
+<p>内存碎片：频繁的进行动态内存分配和释放可能导致堆栈中出现碎片化空间，使得可用的连续内存块减少。使用内存池可以预先申请一块较大的连续内存空间，并将其划分为多个固定大小的小块，从而减少碎片化的问题。</p>
+</li>
+<li>
+<p>内存分配时间开销：每次进行动态内存分配都需要操作系统介入并搜索合适的空闲内存区域，这会带来较大的时间开销。使用内存池，在程序启动时就可以预先申请一定量的内存，之后只需从内存池中获取已经分配好的对象，避免重复申请和释放造成的性能损失。</p>
+</li>
+<li>
+<p>频繁申请和释放同样大小的对象：如果程序中有频繁地申请和释放同样大小的对象，使用内存池可以避免多次进行相同大小对象的动态分配与释放操作，提高效率。</p>
+</li>
+</ol>
+<h2 id="_6">移动语义</h2>
+<ol>
+<li>
+<p>c++中的移动语意是一种特性，通过它可以在对象之间转移资源所有权，而不是进行复制。这个特效可以显著提高程序的效率与性能。</p>
+</li>
+<li>
+<p>在传统c++中，当一个对象复制给另一个对象时，会执行深拷贝操作，将原始对象的值复制到新的对象中，这可能涉及大量数据复制和内存分配，对于大型对象来说非常耗费时间和资源。</p>
+</li>
+<li>
+<p>而移动语意则允许将资源（如对上分配的内存，文件句柄等）从一个对象转移到另一个对象，而不进行数据复制，这是通过右值引用来实现的</p>
+</li>
+<li>
+<p>在移动语意中，原对象被“盗取”了它拥有的资源，并且将其设置为无效状态。接受资源的目标对象获得了该资源并变为有效状态。这样就避免了数据复制和内存分配。</p>
+</li>
+<li>
+<p>要使用移动语义，需要定义移动构造函数和赋值运算符，并使用std::move()函数来标记需要移动的资源。</p>
+</li>
+</ol>
+<h2 id="brpc">brpc</h2>
+<p>brpc是一种基于c++的高性能rpc框架，相较于普通的c++线程，brpc框架的模型线程具有以下的优势：</p>
+<ol>
+<li>
+<p>轻量级：brpc使用协程而不是传统的系统线程模型，协程可用更轻量地创建和销毁，并且在切换上下文时开销更小。</p>
+</li>
+<li>
+<p>高并发:brpc使用协程来处理请求，因为协程之间的切换成不很低，所以可以实现高并发处理请求。这对网络服务来说非常重要。</p>
+</li>
+</ol>
+<p>brpc底层基于TCP/IP协议。它使用TCP作为传输层协议，通过建立可靠的连接来进行数据传输。在应用层上，brpc使用RPC协议进行通信。</p>
+<h2 id="_7">获取当前时间</h2>
+<pre><code>#include &lt;unistd.h&gt;
+char *path = get_current_dir_name();
+</code></pre>
+<p>创建目录</p>
+<pre><code>&lt;sys/stat.h&gt;
+int mkdir(const char* pathname, mode_t mode;)
+</code></pre>
+<p>pathname 目录名
+mode 访问权限 如0755 不要忽略前置0
+返回值： 0成功，其他失败。</p>
+<h2 id="_8">调用可执行程序</h2>
+<p>Linux提供了system()函数和exec()函数，在c++程序当中，可以执行其他程序（二进制文件，操作系统命令或shell脚本）。</p>
+<h2 id="exec">exec函数族</h2>
+<p>exec函数提供了另一种在进程中调用程序（二进制文件或shell脚本）的方法。</p>
+<ol>
+<li>
+<p>如果执行程序失败，直接返回-1，失败原因存与error中。</p>
+</li>
+<li>
+<p>新进程的进程编号与原进程相同，但是新进程取代了原进程的代码段，数据段和堆栈。</p>
+</li>
+<li>
+<p>如果执行成功函数不会返回，当在主程序中调用exec后，被调用的程序将取代调用者程序，也就是说，exec函数之后的代码都不会执行。</p>
+</li>
+</ol>
+<h2 id="io">I/O复用</h2>
+<ol>
+<li>
+<p>阻塞I/O模型：在阻塞IO模型中，当应用发起一个IO操作后，程序会被阻塞，直到操作完成。这意味着应用程序在等待IO操作完成时无法执行其他的任务，造成CPU资源的浪费。</p>
+</li>
+<li>
+<p>非阻塞IO模型：非阻塞IO模型允许一个应用程序发起非阻塞IO操作后继续执行其他任务，而不必等待IO操作完成。应用程序可以通过轮训的方式检查IO操作是否完成，从而实现异步处理数据。</p>
+</li>
+<li>
+<p>IO多路复用模型：IO多路复用模型时一种通过单线程同时监听多个IO时间的机制。常用的IO多路复用系统调用包括select，poll，epoll。通过IO多路复用，应用程序可以同时监听多个文件描述符（sockets），一旦其中任意一个文件描述符准备好IO操作，程序收到通知并且进行相应的处理，从而提高了并发性能。</p>
+</li>
+</ol>
+<h2 id="io_1">阻塞&amp;非阻塞IO</h2>
+<p>阻塞：在进/线程中，发起一个调用时，在调用返回之前，进/线程会阻塞等待，等待中的进/线程会让出CPU使用权。</p>
+<p>非阻塞：在进/线程中，发起一个调用时，会立即返回。</p>
+<p>回阻塞的四个函数：connect(), accept(), send(), recv()。</p>
+<p>在传统的网络服务端中，采用阻塞IO。</p>
+<p>在IO复用的模型中，事件循环不能阻塞在任何环节，所以，应该采用非阻塞IO。</p>
+<h3 id="_9">水平触发</h3>
+<p>读事件：如果epoll_wait触发了读事件，表示有数据可读，如果程序没有把数据读完，再次调用epoll_wait的时候，将立即再次触发读事件。</p>
+<p>写事件：如果发送缓冲区没有满，表示可以写入数据，只要缓冲区没有写满，再次调用epoll_wait的时候，将再次触发写事件。</p>
+<h3 id="_10">边缘触发</h3>
+<p>读事件：epoll_wait触发事件后，不管程序有没有处理读事件，epoll_wait都不会再触发读事件只有新数据到达时，才再次触发读事件。</p>
+<p>写事件：epoll_wait触发写事件后，如果发送缓冲区仍可以写（发送缓冲区没有满），epoll_wait不会再次触发写事件，只有当发送缓冲区由满变为不满时，才再次触发写事件。</p>
+<h3 id="select">select模型</h3>
+<ol>
+<li>
+<p>采用轮训的方式扫描bitmap，性能会随着socket数量增多而下降。</p>
+</li>
+<li>
+<p>每次调用select()，需要拷贝bitmap。</p>
+</li>
+<li>
+<p>bitmap的大小（单个进/线程打开socket数量）由FD——SETSIZE宏设置，默认为1024个，可以修改，但是效率更低。</p>
+</li>
+</ol>
+<h3 id="pollselect">poll模型（在select基础上进行了一些优化）</h3>
+<ol>
+<li>
+<p>在程序中，poll的数据结构是数组，传入内核后转换成了链表。</p>
+</li>
+<li>
+<p>在每调用一次select（）需要拷贝两次bitmap，poll拷贝一次结构体数组。</p>
+</li>
+<li>
+<p>poll监视的连接数没有1024的限制，但是，也是遍历的方法，监视的socket数量越多，效率越低。</p>
+</li>
+</ol>
+<h3 id="epoll">epoll模型</h3>
 
 
 

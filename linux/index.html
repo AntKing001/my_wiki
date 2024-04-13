@@ -406,30 +406,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#io" class="md-nav__link">
-    <span class="md-ellipsis">
-      I/O复用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="I/O复用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select" class="md-nav__link">
-    <span class="md-ellipsis">
-      select
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#fork" class="md-nav__link">
     <span class="md-ellipsis">
       fork()函数
@@ -459,7 +435,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      共享内存
+      进程里面，线程崩溃，整个进程会崩溃吗？（影响进程的内存分布）
     </span>
   </a>
   
@@ -467,6 +443,15 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      共享内存
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       信号量
     </span>
@@ -476,7 +461,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       环境变量
     </span>
@@ -499,7 +484,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       添加域名映射：
     </span>
@@ -508,7 +493,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       无法正常登录：
     </span>
@@ -1143,30 +1128,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#io" class="md-nav__link">
-    <span class="md-ellipsis">
-      I/O复用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="I/O复用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#select" class="md-nav__link">
-    <span class="md-ellipsis">
-      select
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#fork" class="md-nav__link">
     <span class="md-ellipsis">
       fork()函数
@@ -1196,7 +1157,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      共享内存
+      进程里面，线程崩溃，整个进程会崩溃吗？（影响进程的内存分布）
     </span>
   </a>
   
@@ -1204,6 +1165,15 @@
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      共享内存
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       信号量
     </span>
@@ -1213,7 +1183,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       环境变量
     </span>
@@ -1236,7 +1206,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       添加域名映射：
     </span>
@@ -1245,7 +1215,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       无法正常登录：
     </span>
@@ -1367,19 +1337,6 @@
 <p>套接字(Socket):套接字提供了一种在网络上进程间通信的机制，能够在不同主机的进程进行数据交换。</p>
 </li>
 </ol>
-<h2 id="io">I/O复用</h2>
-<ol>
-<li>
-<p>阻塞I/O模型：在阻塞IO模型中，当应用发起一个IO操作后，程序会被阻塞，直到操作完成。这意味着应用程序在等待IO操作完成时无法执行其他的任务，造成CPU资源的浪费。</p>
-</li>
-<li>
-<p>非阻塞IO模型：非阻塞IO模型允许一个应用程序发起非阻塞IO操作后继续执行其他任务，而不必等待IO操作完成。应用程序可以通过轮训的方式检查IO操作是否完成，从而实现异步处理数据。</p>
-</li>
-<li>
-<p>IO多路复用模型：IO多路复用模型时一种通过单线程同时监听多个IO时间的机制。常用的IO多路复用系统调用包括select，poll，epoll。通过IO多路复用，应用程序可以同时监听多个文件描述符（sockets），一旦其中任意一个文件描述符准备好IO操作，程序收到通知并且进行相应的处理，从而提高了并发性能。</p>
-</li>
-</ol>
-<h3 id="select">select</h3>
 <h2 id="fork"><strong>fork()函数</strong></h2>
 <p>一个进程可以调用fork()函数来创建一个新进程。</p>
 <p><code>pid_tfork(void)</code></p>
@@ -1445,7 +1402,19 @@ if (pid &gt; 0) {
 <p>如果父进程很忙，可捕获SIGCHLD信号，在信号处理函数中调用wait()/waitpid()。</p>
 </li>
 </ol>
-<h2 id="_4">共享内存</h2>
+<h2 id="_4">进程里面，线程崩溃，整个进程会崩溃吗？（影响进程的内存分布）</h2>
+<ol>
+<li>
+<p>一般来说，如果线程是因为非法访问内存而引起的崩溃，那么进程很可能会崩溃。这是因为在进程中，各个线程的地址空间是共享的。也就是说，线程之间可以访问和修改同一块内存区域。因此，当某个线程对地址的非法访问导致内存的不确定性时，可能会影响到其他线程。</p>
+</li>
+<li>
+<p>当一个线程崩溃时，操作系统会尝试进行一些异常处理，如终止该线程并释放其占用的资源。然而，如果线程的崩溃导致了内存的破坏或者数据的不一致，那么其他线程在访问这些被破坏的内存区域时就会遇到问题。这可能导致其他线程也发生崩溃或者产生不可预测的行为。</p>
+</li>
+<li>
+<p>为了保护整个进程的稳定性和安全性，操作系统往往会选择终止整个进程。这样可以确保所有线程都停止执行，避免进一步的内存破坏和数据不一致。此外，终止进程还可以释放占用的资源，以便其他进程可以继续使用。</p>
+</li>
+</ol>
+<h2 id="_5">共享内存</h2>
 <ul>
 <li>
 <p>共享内存不能自动扩展，只能采用c++内置的数据类型</p>
@@ -1485,18 +1454,18 @@ buf: 操作共享内存的数据结构的地址，如果要删除共享内存填
 
 root用户创建的内存，不管创建权限是什么，普通用户无法删除。
 </code></pre>
-<h2 id="_5">信号量</h2>
+<h2 id="_6">信号量</h2>
 <p>查看信号量 <code>ipcs -s</code></p>
 <p>删除信号量 <code>ipcrm sem (id)</code></p>
-<h3 id="_6"><strong>环境变量</strong></h3>
+<h3 id="_7"><strong>环境变量</strong></h3>
 <h3 id="rebootshoutdown"><strong>reboot/shoutdown</strong></h3>
 <p>重启linux系统/关机
 ```
 reboot</p>
 <p>shut -h [时间]   shut -h now</p>
-<h2 id="_7">添加域名映射：</h2>
+<h2 id="_8">添加域名映射：</h2>
 <p>sudo vim /etc/hosts  </p>
-<h2 id="_8">无法正常登录：</h2>
+<h2 id="_9">无法正常登录：</h2>
 <ol>
 <li>
 <p>选择启动时，对着启动的内核摁e,对内核界面进行编辑，在linux16那一行的最后添加 init=/bin/sh  </p>
